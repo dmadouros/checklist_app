@@ -40,3 +40,26 @@ Eventually, I'd like to try rewriting it (or parts or it) and/or try
 6. check off checklist item
 7. tag/group checklist templates
 8. complete checklist
+
+
+## Links
+https://github.com/rubocop-hq/rails-style-guide
+https://guides.rubyonrails.org/active_record_validations.html
+https://github.com/ferrous26/rspec-pride
+https://github.com/awesome-print/awesome_print
+https://github.com/rspec/rspec-rails
+https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md#configure-your-test-suite
+https://github.com/rspec/rspec-rails
+https://guides.rubyonrails.org/routing.html
+https://til.hashrocket.com/posts/5a527aacb6-rails-generate-no-tests
+https://devcenter.heroku.com/articles/getting-started-with-rails5
+https://mochajs.org/
+https://yarnpkg.com/en/docs/usage
+http://www.chaijs.com/
+https://redux.js.org/
+
+## To Read
+https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3
+https://hackernoon.com/javascript-testing-and-debugging-tools-ee81374c01aa
+https://egghead.io/courses/getting-started-with-redux
+https://support.balsamiq.com/tutorials/
