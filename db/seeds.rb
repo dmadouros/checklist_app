@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-State.create!(name: 'Started')State.create!(name: 'Started')
+State.create!(name: 'Started')
 
 checklist = Checklist.create!(name: 'Saturday', state: State.started)
+
+Item.create!(name: 'Mow Lawn', completed: false, checklist: checklist)
