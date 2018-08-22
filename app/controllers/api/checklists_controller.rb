@@ -1,7 +1,7 @@
 module Api
   class ChecklistsController < ApplicationController
     def show
-      checklist = Checklist.joins(:items).includes(:items).first
+      checklist = Checklist.includes(:items).first
 
       render json: present_checklist(checklist).to_json
     end
@@ -10,6 +10,7 @@ module Api
 
     def present_checklist(checklist)
       {
+        id: checklist.id,
         name: checklist.name,
         state: checklist.state.name,
         items: present_items(checklist.items)
@@ -22,6 +23,7 @@ module Api
 
     def present_item(item)
       {
+        id: item.id,
         name: item.name,
         completed: item.completed
       }
