@@ -58,6 +58,9 @@ https://yarnpkg.com/en/docs/usage
 http://www.chaijs.com/
 https://redux.js.org/
 
+https://github.com/colszowka/simplecov
+https://istanbul.js.org/
+
 ## To Read
 https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3
 https://hackernoon.com/javascript-testing-and-debugging-tools-ee81374c01aa
