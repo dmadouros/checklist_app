@@ -1,5 +1,9 @@
 module Api
   class ChecklistsController < ApplicationController
+    def index
+
+    end
+
     def show
       checklist = Checklist.includes(:items).first
 

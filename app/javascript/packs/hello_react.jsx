@@ -1,21 +1,27 @@
-// Run this example by adding <%= javascript_pack_tag 'hello_react' %> to the head of your layout file,
-// like app/views/layouts/application.html.erb. All it does is render <div>Hello React</div> at the bottom
-// of the page.
-
+import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import { Provider } from 'react-redux';
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
+import App from '../src/app'
+import store from '../src/store'
+
+const Hello = class extends React.Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+  }
+}
 
 Hello.defaultProps = {
-  name: 'David'
+  name: 'David',
 }
 
 Hello.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,4 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
     <Hello name="React" />,
     document.body.appendChild(document.createElement('div')),
   )
-})
+});
